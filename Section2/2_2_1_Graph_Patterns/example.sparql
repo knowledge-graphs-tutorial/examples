@@ -1,0 +1,7 @@
+PREFIX : <http://example.org/>
+
+SELECT ?ev ?vn1 ?vn2 {
+  ?ev :type "Food Festival" .
+  ?ev :venue ?vn1 .
+  ?ev :venue ?vn2 .        
+}
