@@ -1,0 +1,24 @@
+PREFIX : <http://example.org/>
+
+SELECT ?ev ?vn1 ?vn2 {
+  {
+    {
+      { 
+        ?event :type :FoodFestival .   #Q1
+      }
+      UNION 
+      {
+        ?event :type :DrinksFestival . #Q2
+      }
+      MINUS
+      {
+        ?event :venue ?venue .         #Q5
+        ?venue :city  :Santiago .
+      }
+    } OPTIONAL {
+      ?event :start ?start .           #Q3
+    }
+  } OPTIONAL {
+    ?event :name ?name                 #Q4
+  }
+}

@@ -3,7 +3,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 :EID15 :name  "Ñam" ;
-       :type  "Open Market", "Food Festival", "Drinks Festival " ;
+       :type  :OpenMarket , :FoodFestival , :DrinksFestival ;
        :venue :SantaLucía ;
        :start "2018-03-22T12:00:00"^^xsd:dateTime ;
        :end   "2018-03-29T20:00:00"^^xsd:dateTime .
@@ -11,13 +11,18 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :SantaLucía :city :Santiago .
 
 :EID16 :name  "Food Truck" ;
-       :venue :Sotomayor,  :PiscinaOlímpica ;
-       :city  :ViñaDelMar, :Arica ;
-       :type  "Open Market", "Food Festival"  .
+       :type  :OpenMarket, :FoodFestival ;
+       :venue :Sotomayor,  :PiscinaOlímpica .
+
+:Sotomayor :city :ViñaDelMar .
+
+:PiscinaOlímpica :city :Arica .
 
 :ViñaDelMar :bus :Santiago, :Arica ;
-            :flight :Santiago .
+       :flight :Santiago .
+
 :Arica :bus    :ViñaDelMar ;
        :flight :Santiago .
+
 :Santiago :bus :ViñaDelMar ;
-          :flight :ViñaDelMar, :Arica .
+       :flight :ViñaDelMar, :Arica .

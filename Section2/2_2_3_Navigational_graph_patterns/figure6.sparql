@@ -1,0 +1,8 @@
+PREFIX : <http://example.org/>
+
+SELECT ?event ?name ?city {
+  ?event :name ?name ;
+         :type :FoodFestival .
+  :Arica (:bus|:flight)* ?city .
+  ?city ^(:venue/:city) ?event .
+}

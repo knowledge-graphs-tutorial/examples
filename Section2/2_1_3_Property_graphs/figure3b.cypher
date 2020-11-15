@@ -1,0 +1,1 @@
+CREATE (Santiago:CapitalCity { name: 'Santiago' , lat: -33.45 , long: -70.66 })-[:flight { code: 'LA380' , company: 'LATAM' }]->(Arica:PortCity { name: 'Arica' , lat: -18.48 , long: -70.33 })-[:flight { code: 'LA381' , company: 'LATAM' }]->(Santiago)
