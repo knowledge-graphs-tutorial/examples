@@ -1,3 +1,10 @@
+# SPARQL 1.1
+# Data: figure1.ttl
+# Documentation: https://www.w3.org/TR/sparql11-query/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://sparql-playground.sib.swiss/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+
 PREFIX : <http://example.org/>
 
 SELECT ?event ?name ?city {

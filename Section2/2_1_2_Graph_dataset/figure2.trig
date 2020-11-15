@@ -1,3 +1,7 @@
+# Trig
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://www.w3.org/TR/trig/
+
 prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
