@@ -1,0 +1,18 @@
+# Turtle
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+# Analytics: https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3
+
+prefix : <http://example.org/>
+
+_:n1 :flight _:n2 ;
+  :elements ( :EasterIsland ) .
+
+_:n2 :flight _:n1 , _:n2 ;
+  :bus _:n3 ;
+  :elements ( :Arica :Calama :Iquique :PuertoMontt :PuntaArenas :Santiago ) .
+
+_:n3 :bus _:n2 , _:n3 ;
+  :elements ( :GreyGlacier :LosFlamencos :MoonValley :OsornoVolcano :PiedrasRojas :PuertoVaras :SanPedro :TorresDelPaine ) .
+

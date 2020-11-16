@@ -1,0 +1,30 @@
+# Turtle / OWL 2
+# Data: figure11-data.ttl
+# Documentation (Turtle): https://www.w3.org/TR/turtle/
+# Documentation (OWL 2): https://www.w3.org/TR/owl2-primer/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+
+prefix : <http://example.org/>
+prefix owl:  <http://www.w3.org/2002/07/owl#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# OWL 2 DL Compliance:
+:capital rdf:type owl:ObjectProperty .
+
+# Assertion
+:Chile :capital :Santiago .
+
+# Negation
+_:n rdf:type owl:NegativePropertyAssertion ;
+     owl:sourceIndividual   :Chile ;
+     owl:assertionProperty  :capital ;
+     owl:targetIndividual   :Arica .
+
+# SameAs
+:RegiónV owl:sameAs :RegiónDeValparaíso .
+
+# Different From
+:Valparaíso owl:differentFrom :RegiónDeValparaíso .

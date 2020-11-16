@@ -6,10 +6,11 @@
 # Try online: http://rdfplayground.dcc.uchile.cl/
 
 PREFIX : <http://example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?event ?name ?city {
-  ?event :name ?name ;
-         :type :FoodFestival .
+  ?event :name    ?name ;
+         rdf:type :FoodFestival .
   :Arica (:bus|:flight)* ?city .
   ?city ^(:venue/:city) ?event .
 }

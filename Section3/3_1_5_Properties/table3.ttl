@@ -1,0 +1,77 @@
+# Turtle / OWL 2
+# Data: figure11-data.ttl
+# Documentation (Turtle): https://www.w3.org/TR/turtle/
+# Documentation (OWL 2): https://www.w3.org/TR/owl2-primer/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+
+prefix : <http://example.org/>
+prefix owl:  <http://www.w3.org/2002/07/owl#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# OWL 2 DL Compliance:
+:venue rdf:type owl:ObjectProperty .
+:location rdf:type owl:ObjectProperty .
+:hosts rdf:type owl:ObjectProperty .
+:partOf rdf:type owl:ObjectProperty .
+:nearby rdf:type owl:ObjectProperty .
+:capital rdf:type owl:ObjectProperty .
+:partOf rdf:type owl:ObjectProperty .
+:flight rdf:type owl:ObjectProperty .
+
+:start rdf:type owl:DatatypeProperty .
+:begins rdf:type owl:DatatypeProperty .
+:population rdf:type owl:DatatypeProperty .
+:lat rdf:type owl:DatatypeProperty .
+:long rdf:type owl:DatatypeProperty .
+
+:Event rdf:type owl:Class .
+:Venue rdf:type owl:Class .
+:City rdf:type owl:Class .
+
+# Subproperty
+:venue rdfs:subPropertyOf :location .
+
+# Domain
+:venue rdfs:domain :Event .
+
+# Range
+:venue rdfs:range :Venue .
+
+# Equivalence
+:start owl:equivalentProperty :begins .
+
+# Inverse
+:venue owl:inverseOf :hosts .
+
+# Disjoint
+:venue owl:propertyDisjointWith :hosts .
+
+# Transitive
+:partOf rdf:type owl:TransitiveProperty .
+
+# Symmetric
+:nearby rdf:type owl:SymmetricProperty .
+
+# Asymmetric
+:capital rdf:type owl:AsymmetricProperty .
+
+# Reflexive
+:partOf rdf:type owl:ReflexiveProperty .
+
+# Irreflexive
+:flight rdf:type owl:IrreflexiveProperty .
+
+# Functional
+:population rdf:type owl:FunctionalProperty .
+
+# Inv. Functional
+:capital rdf:type owl:InverseFunctionalProperty .
+
+# Key
+:City owl:hasKey ( :lat :long ) .
+
+# Chain
+:location owl:propertyChainAxiom ( :location :partOf ) .

@@ -1,0 +1,94 @@
+# Turtle / OWL 2
+# Data: figure11-data.ttl
+# Documentation (Turtle): https://www.w3.org/TR/turtle/
+# Documentation (OWL 2): https://www.w3.org/TR/owl2-primer/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+
+prefix : <http://example.org/>
+prefix owl:  <http://www.w3.org/2002/07/owl#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# OWL 2 DL Compliance:
+:nationality rdf:type owl:ObjectProperty .
+:hasPart rdf:type owl:ObjectProperty .
+:driver rdf:type owl:ObjectProperty .
+:fluent rdf:type owl:ObjectProperty .
+:body rdf:type owl:ObjectProperty .
+
+:City rdf:type owl:Class .
+:Place rdf:type owl:Class .
+:Human rdf:type owl:Class .
+:Person rdf:type owl:Class .
+:Region rdf:type owl:Class .
+:Dead rdf:type owl:Class .
+:Alive rdf:type owl:Class .
+:Flight rdf:type owl:Class .
+:DomesticFlight rdf:type owl:Class .
+:InternationalFlight rdf:type owl:Class .
+:SelfDrivingTaxi rdf:type owl:Class .
+:Taxi rdf:type owl:Class .
+:SelfDriving rdf:type owl:Class .
+:EUState rdf:type owl:Class .
+:Weightless rdf:type owl:Class .
+:ChileanCitizen rdf:type owl:Class .
+:SelfDriving rdf:type owl:Class .
+:Polyglot rdf:type owl:Class .
+:BinaryStarSystem rdf:type owl:Class .
+:Star rdf:type owl:Class .
+
+# Note that while the definitions could be made
+# more simply as follows:
+#
+# :Dead owl:complementOf :alive .
+# :Flight owl:unionOf ( :DomesticFlight :InternationalFlight ) .
+# etc.
+#
+# This would make the ontologies OWL 2 Full, and
+# not OWL 2 DL compliant (which requires blank nodes
+# for class definitions). Hence we use equivalences:
+#
+# :Dead owl:equivalentClass [ owl:complementOf :alive ] .
+# :Flight owl:equivalentClass [ owl:unionOf ( :DomesticFlight :InternationalFlight ) ] .
+# etc.
+
+# Subclass
+:City rdfs:subClassOf :Place .
+
+# Equivalence
+:Human owl:equivalentClass :Person .
+
+# Disjoint
+:City owl:disjointWith :Region .
+
+# Complement
+:Dead owl:equivalentClass [ owl:complementOf :alive ] .
+
+# Union
+:Flight owl:equivalentClass [ owl:unionOf ( :DomesticFlight :InternationalFlight ) ] .
+
+# Intersection
+:SelfDrivingTaxi owl:equivalentClass [ owl:intersectionOf ( :SelfDriving :Taxi ) ] .
+
+# Enumeration
+:EUState owl:equivalentClass [ owl:oneOf ( :Austria :Belgium :Bulgaria :Croatia :Cyprus :Czechia :Denmark :Estonia :Finland :France :Germany :Greece :Hungary :Ireland :Italy :Latvia :Lithuania :Luxembourg :Malta :Netherlands :Poland :Portugal :Romania :Slovakia :Slovenia :Spain :Sweden ) ] .
+
+# Some Values
+:EUCitizen owl:equivalentClass [ owl:someValuesFrom :EUState ; owl:onProperty :nationality ] .
+
+# All Values
+:Weightless owl:equivalentClass [ owl:allValuesFrom :Weightless ; owl:onProperty :hasPart ] .
+
+# Has Value
+:ChileanCitizen owl:equivalentClass [ owl:hasValue :Chile ; owl:onProperty :nationality ] .
+
+# Has Self
+:SelfDriving owl:equivalentClass [ owl:hasSelf true ; owl:onProperty :driver ] .
+
+# Cardinality
+:Polyglot owl:equivalentClass [ owl:minCardinality 2 ; owl:onProperty :fluent ] .
+
+# Qualified Cardinality
+:Polyglot owl:equivalentClass [ owl:qualifiedCardinality 2 ; owl:onProperty :body ; owl:onClass :Star ] .

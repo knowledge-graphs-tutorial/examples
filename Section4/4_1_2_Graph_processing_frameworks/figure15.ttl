@@ -1,0 +1,22 @@
+# Turtle
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+# PageRank in Giraph (1): https://giraph.apache.org/pagerank.html
+# PageRank in Giraph (2): https://github.com/usi-systems/giraph-pagerank
+# PageRank in GraphX: https://spark.apache.org/docs/1.6.1/api/java/org/apache/spark/graphx/lib/PageRank.html
+# PageRank in Signal/Collect: https://uzh.github.io/signal-collect/
+
+prefix : <http://example.org/>
+
+:MoonValley :bus :PiedrasRojas .
+
+:PiedrasRojas :bus :LosFlamencos .
+
+:LosFlamencos :bus :SanPedro .
+
+:Calama :bus :SanPedro .
+
+:SanPedro :bus :MoonValley , :LosFlamencos , :Calama , :Arica .
+
+:Arica :bus :SanPedro .

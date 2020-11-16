@@ -4,6 +4,7 @@
 # Try online: http://rdfplayground.dcc.uchile.cl/
 
 prefix : <http://example.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
@@ -17,10 +18,10 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
        :from    :Arica ;
        :to      :Santiago .
 
-:Santiago :type :CapitalCity ;
+:Santiago rdf:type :CapitalCity ;
        :lat  -33.45 ;
        :long -70.66 .
 
-:Arica :type :PortCity ;
+:Arica rdf:type :PortCity ;
        :lat  -18.48 ;
        :long -70.33 .

@@ -6,16 +6,17 @@
 # Try online: http://rdfplayground.dcc.uchile.cl/
 
 PREFIX : <http://example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?ev ?vn1 ?vn2 {
   {
     {
       { 
-        ?event :type :FoodFestival .   #Q1
+        ?event rdf:type :FoodFestival .   #Q1
       }
       UNION 
       {
-        ?event :type :DrinksFestival . #Q2
+        ?event rdf:type :DrinksFestival . #Q2
       }
       MINUS
       {

@@ -2,18 +2,18 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :Place {
-    :flight @:Place   * ;
-    :bus    @:Place   * ;
-    :lat    xsd:float ? ;
-    :long   xsd:float ?
+    :flight    @:Place   * ;
+    :bus       @:Place   * ;
+    :lat       xsd:float ? ;
+    :long      xsd:float ?
 }
 
 :Event {
-    :name   xsd:string    * ;
-    :start  xsd:dateTime  ? ;
-    :end    xsd:dateTime  ? ;
-    :type   .             + ;
-    :venue  @:Venue       +
+    :name      xsd:string    * ;
+    :start     xsd:dateTime  ? ;
+    :end       xsd:dateTime  ? ;
+    rdf:type   .             + ;
+    :venue     @:Venue       +
 }
 
 :Venue @:Place AND {
