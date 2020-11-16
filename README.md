@@ -20,5 +20,5 @@ A list of resources linked:
 * [OpenKE](https://github.com/thunlp/OpenKE) (Implementations of TransE, TransH, TransR, TransD, DistMult, RESCAL, HoIE, ComplEx, SimplE, etc.)
 * [GNNs in Pytorch](https://towardsdatascience.com/hands-on-graph-neural-networks-with-pytorch-pytorch-geometric-359487e221a8) (GraphSAGE)
 * [AMIE+](https://github.com/samehkamaleldin/amie_plus) (Rule Mining)
-* [DL Learner](https://dl-learner.org/)
+* [DL Learner](https://dl-learner.org/) (DL Axiom Mining)
 
