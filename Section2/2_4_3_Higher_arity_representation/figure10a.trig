@@ -1,6 +1,6 @@
 # Trig
-# Documentation: https://www.w3.org/TR/turtle/
-# Try online: https://www.w3.org/TR/trig/
+# Documentation: https://www.w3.org/TR/trig/
+# Try online: https://rdfshape.weso.es/
 
 prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>

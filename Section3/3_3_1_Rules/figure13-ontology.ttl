@@ -1,6 +1,6 @@
 # Turtle / OWL 2
-# Data: figure11-data.ttl
-# Query: figure11-query.sparql
+# Data: figure12-data.ttl
+# Query: figure12-query.sparql
 # Documentation (Turtle): https://www.w3.org/TR/turtle/
 # Documentation (OWL 2): https://www.w3.org/TR/owl2-primer/
 # Try online: https://rdfshape.weso.es/
