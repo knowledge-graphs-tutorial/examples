@@ -3,7 +3,7 @@
 # Try online: https://rdfshape.weso.es/
 # Try online: http://rdfplayground.dcc.uchile.cl/
 # AMIE+: https://github.com/samehkamaleldin/amie_plus
-# DL Learner: https://dl-learner.org/ 
+# DL Learner: https://dl-learner.org/
 
 prefix : <http://example.org/>
 prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

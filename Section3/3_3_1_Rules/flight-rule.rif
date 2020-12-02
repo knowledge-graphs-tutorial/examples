@@ -11,7 +11,7 @@ Document(
       Forall ?x ?y ?z (
          ?x[ex:domesticFlight->?y] :- And(
             ?x[ex:flight->?y]
-            ?y[ex:country->?z]  
+            ?y[ex:country->?z]
 			?x[ex:country->?z] ))
    )
 )

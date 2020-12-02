@@ -25,6 +25,6 @@ SELECT DISTINCT ?name {
   {
     ?festival :venue ?x .
     ?x :city :Santiago .
-  } 
+  }
   ?festival :name ?name .
 }

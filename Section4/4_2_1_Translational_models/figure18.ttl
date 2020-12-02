@@ -16,4 +16,4 @@ prefix : <http://example.org/>
 
 :Toconoa :northOf :Santiago .
 
-:Santiago :northOf :Curico . 
+:Santiago :northOf :Curico .

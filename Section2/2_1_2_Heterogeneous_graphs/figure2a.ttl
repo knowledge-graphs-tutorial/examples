@@ -11,6 +11,6 @@ prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 :Chile rdf:type :Country ;
        :borders :Perú .
-		  
+
 :Perú rdf:type :Country ;
       :borders :Chile .

@@ -11,5 +11,5 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?ev ?vn1 ?vn2 {
   ?ev rdf:type :FoodFestival .
   ?ev :venue   ?vn1 .
-  ?ev :venue   ?vn2 .        
+  ?ev :venue   ?vn2 .
 }

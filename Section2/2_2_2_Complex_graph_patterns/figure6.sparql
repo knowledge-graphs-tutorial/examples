@@ -11,10 +11,10 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?ev ?vn1 ?vn2 {
   {
     {
-      { 
+      {
         ?event rdf:type :FoodFestival .   #Q1
       }
-      UNION 
+      UNION
       {
         ?event rdf:type :DrinksFestival . #Q2
       }
