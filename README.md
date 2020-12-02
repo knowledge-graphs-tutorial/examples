@@ -2,11 +2,52 @@
 
 This repository contains examples in concrete syntaxes from the Knowledge Graphs paper (under review for ACM CSUR), along with links to useful resources.
 
-See the extended version of the paper here: [Knowledge Graphs](https://arxiv.org/abs/2003.02320).
+See also the extended version of the paper: [Hogan, A., et al. (2020). Knowledge graphs. arXiv preprint arXiv:2003.02320.](https://arxiv.org/abs/2003.02320)
 
-The examples are divided into subsections according to the ACM CSUR version of the paper. To find a particular example you can also search by the name of a particular figure in the repository (e.g., "figure4", "table2", etc.). The examples include comments that indicate where you can try out the examples online, or otherwise where you can find code relating to the example and the discussion it the paper.
+If you find any material in the paper or this repository useful, please cite it as:
 
-A list of resources linked:
+```bibtex
+@article{DBLP:journals/corr/abs-2003-02320,
+  author    = {Aidan Hogan and
+               Eva Blomqvist and
+               Michael Cochez and
+               Claudia d'Amato and
+               Gerard de Melo and
+               Claudio Guti{\'{e}}rrez and
+               Jos{\'{e}} Emilio Labra Gayo and
+               Sabrina Kirrane and
+               Sebastian Neumaier and
+               Axel Polleres and
+               Roberto Navigli and
+               Axel{-}Cyrille Ngonga Ngomo and
+               Sabbir M. Rashid and
+               Anisa Rula and
+               Lukas Schmelzeisen and
+               Juan F. Sequeda and
+               Steffen Staab and
+               Antoine Zimmermann},
+  title     = {Knowledge Graphs},
+  journal   = {CoRR},
+  volume    = {abs/2003.02320},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2003.02320},
+  archivePrefix = {arXiv},
+  eprint    = {2003.02320},
+  timestamp = {Thu, 26 Nov 2020 15:54:05 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2003-02320.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
+## Overview
+
+The examples are divided into folders for each subsections according to the ACM CSUR version of the paper.
+To find a particular example you can also search by the name of a particular figure in the repository (e.g., "figure4", "table2", etc.).
+The examples include comments that point to documentation of the respecitve standard, indicate where you can try out the examples online, or otherwise where you can find code relating to the example and the discussion it the paper.
+
+## Resources
+
+The following is a list of resources linked to in the respective examples:
 
 * [RDFShape](https://rdfshape.weso.es/) (RDF, RDFS, OWL, SHACL, ShEx)
 * [RDF Playground](http://rdfplayground.dcc.uchile.cl/) (RDF, RDFS, OWL, SHACL, ShEx)
@@ -22,3 +63,12 @@ A list of resources linked:
 * [AMIE+](https://github.com/samehkamaleldin/amie_plus) (Rule Mining)
 * [DL Learner](https://dl-learner.org/) (DL Axiom Mining)
 
+## Contributing
+
+Please feel free to submit [bug reports](https://github.com/knowledge-graphs-tutorial/examples/issues) and [pull requests](https://github.com/knowledge-graphs-tutorial/examples/pulls)!
+
+## License
+
+![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)
+
+To the extent possible under law, the contributors waive all copyright and related or neighboring rights to the contents of this repository.
