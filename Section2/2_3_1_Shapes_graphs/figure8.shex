@@ -10,8 +10,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :Event {
     :name      xsd:string    * ;
-    :start     xsd:dateTime  ? ;
-    :end       xsd:dateTime  ? ;
+    :start     xsd:dateTime    ;
+    :end       xsd:dateTime    ;
     rdf:type   .             + ;
     :venue     @:Venue       +
 }
