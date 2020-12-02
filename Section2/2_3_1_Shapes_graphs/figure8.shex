@@ -1,3 +1,8 @@
+# ShEx
+# Data: figure1.ttl
+# Documentation: http://shex.io/
+# Try online: https://rdfshape.weso.es/shExValidate
+
 prefix : <http://example.org/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
