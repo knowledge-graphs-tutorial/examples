@@ -1,0 +1,41 @@
+# Trig
+# Documentation: https://www.w3.org/TR/trig/
+
+prefix : <http://example.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Events {
+       :EID15 :name    "Ñam" ;
+              rdf:type :OpenMarket , :FoodFestival , :DrinksFestival ;
+              :venue   :SantaLucía ;
+              :start   "2018-03-22T12:00:00"^^xsd:dateTime ;
+              :end     "2018-03-29T20:00:00"^^xsd:dateTime .
+
+       :SantaLucía :city :Santiago .
+
+       :EID16 :name    "Food Truck" ;
+              rdf:type :OpenMarket, :FoodFestival ;
+              :venue   :Sotomayor,  :PiscinaOlímpica .
+
+       :Sotomayor :city :ViñaDelMar .
+
+       :PiscinaOlímpica :city :Arica .
+}
+
+:Routes {
+       :ViñaDelMar :bus :Santiago, :Arica ;
+              :flight :Santiago .
+
+       :Arica :bus    :ViñaDelMar ;
+              :flight :Santiago .
+
+       :Santiago :bus :ViñaDelMar ;
+              :flight :ViñaDelMar, :Arica .
+}
+
+# default graph
+{
+       :Routes :updated "2018-04-03"^^xsd:date .
+       :Events :updated "2018-06-14"^^xsd:date .
+}

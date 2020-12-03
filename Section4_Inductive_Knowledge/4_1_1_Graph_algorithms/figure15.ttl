@@ -1,0 +1,43 @@
+# Turtle
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+# Analytics: https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3
+
+prefix : <http://example.org/>
+
+:MoonValley :bus :PiedrasRojas .
+
+:PiedrasRojas :bus :LosFlamencos .
+
+:LosFlamencos :bus :SanPedro .
+
+:Calama :flight :Iquique , :Santiago ;
+        :bus :SanPedro .
+
+:SanPedro :bus :MoonValley , :LosFlamencos , :Calama , :Arica .
+
+:Arica :flight :Santiago ;
+       :bus :SanPedro .
+
+:Iquique :flight :Calama , :Santiago ;
+         :bus :PuntaArenas .
+
+:Santiago :flight :Calama , :Arica , :Iquique , :EasterIsland , :PuntaArenas , :PuertoMontt ;
+          :bus :PuertoVaras .
+
+:EasterIsland :flight :Santiago .
+
+:PuntaArenas :flight :Santiago , :PuertoMontt ;
+             :bus :Iquique , :TorresDelPaine .
+
+:PuertoMontt :flight :Santiago , :PuntaArenas ;
+             :bus :PuertoVaras .
+
+:PuertoVaras :bus :Santiago , :PuertoMontt , :OsornoVolcano .
+
+:TorresDelPaine :bus :GreyGlacier .
+
+:GreyGlacier :bus :PuntaArenas .
+
+:OsornoVolcano :bus :PuertoVaras .

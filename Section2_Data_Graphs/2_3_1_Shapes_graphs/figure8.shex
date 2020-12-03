@@ -1,0 +1,33 @@
+# ShEx
+# Data: figure1.ttl
+# Documentation: http://shex.io/
+# Try online: https://rdfshape.weso.es/shExValidate
+
+prefix : <http://example.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Place {
+    :flight    @:Place   * ;
+    :bus       @:Place   * ;
+    :lat       xsd:float ? ;
+    :long      xsd:float ?
+}
+
+:Event {
+    :name      xsd:string    * ;
+    :start     xsd:dateTime    ;
+    :end       xsd:dateTime    ;
+    rdf:type   .             + ;
+    :venue     @:Venue       +
+}
+
+:Venue @:Place AND {
+    :indoor xsd:boolean  ?  ;
+    :city   @:City       ?
+}
+
+:City @:Place AND {
+    :population xsd:integer MinExclusive 5000 ?
+}
+

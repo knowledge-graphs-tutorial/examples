@@ -1,8 +1,0 @@
-# RDF*
-# Documentation: https://w3c.github.io/rdf-star/
-# Try online: https://github.com/w3c/rdf-star
-
-prefix : <http://example.org/>
-prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-
-<< :Santiago :flight :Arica >> :validFrom "1956"^^xsd:gYear .

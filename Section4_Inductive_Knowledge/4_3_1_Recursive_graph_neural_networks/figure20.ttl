@@ -1,0 +1,21 @@
+# Turtle
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+# GNNs: https://towardsdatascience.com/hands-on-graph-neural-networks-with-pytorch-pytorch-geometric-359487e221a8
+
+prefix : <http://example.org/>
+
+:PuntaArenas :flight :PuertoMontt ;
+             :bus :TorresDelPaine .
+
+:PuertoMontt :flight :PuntaArenas ;
+             :bus :PuertoVaras .
+
+:PuertoVaras :bus :PuertoMontt , :OsornoVolcano .
+
+:TorresDelPaine :bus :GreyGlacier .
+
+:GreyGlacier :bus :PuntaArenas .
+
+:OsornoVolcano :bus :PuertoVaras .

@@ -1,0 +1,18 @@
+RIF-Core Presentation Syntax
+Documentation: https://www.w3.org/TR/rif-core/#RIF-Core_Presentation_Syntax
+Based on: https://www.w3.org/TR/rif-owl-rl/
+Implementations: https://www.w3.org/2005/rules/wiki/Implementations
+
+Document(
+   Prefix(ex <http://example.org/>)
+
+   Group(
+      (* <#dom-flight> *)
+      Forall ?x ?y ?z (
+         ?x[ex:domesticFlight->?y] :- And(
+            ?x[ex:flight->?y]
+            ?y[ex:country->?z]
+			?x[ex:country->?z] ))
+   )
+)
+

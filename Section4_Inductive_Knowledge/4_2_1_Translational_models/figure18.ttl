@@ -1,0 +1,19 @@
+# Turtle
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+# Embeddings: https://github.com/thunlp/OpenKE
+# TransE visualisations: http://www.ccri.com/2018/06/27/use-transe-effectively/
+
+prefix : <http://example.org/>
+
+:Antofagasta :northOf :Valparaíso .
+
+:Valparaíso :northOf :Licantén ;
+            :westOf :Santiago .
+
+:Licantén :westOf :Curico .
+
+:Toconoa :northOf :Santiago .
+
+:Santiago :northOf :Curico .

@@ -1,0 +1,45 @@
+# Turtle
+# Documentation: https://www.w3.org/TR/turtle/
+# Try online: https://rdfshape.weso.es/
+# Try online: http://rdfplayground.dcc.uchile.cl/
+# AMIE+: https://github.com/samehkamaleldin/amie_plus
+# DL Learner: https://dl-learner.org/
+
+prefix : <http://example.org/>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+:Chile :capital :Santiago ;
+       rdf:type :Country .
+
+:Peru :capital :Lima ;
+      rdf:type :Country .
+
+:Iquique :nearby :IQQ ;
+         :country :Chile .
+
+:IQQ :country :Chile ;
+     :flight :ARI ;
+     :domesticFlight :ARI ;
+     rdf:type :DomesticAirport , :Airport .
+
+:Arica :nearby :ARI ;
+       :country :Chile .
+
+:ARI :country :Chile ;
+     :flight :IQQ , :SCL ;
+     :domesticFlight :IQQ , :SCL ;
+     rdf:type :DomesticAirport , :Airport .
+
+:Santiago :nearby :SCL ;
+          :country :Chile .
+
+:SCL :flight :LIM ;
+     :internationalFlight :LIM ;
+     rdf:type :InternationalAirport , :Airport .
+
+:Lima :nearby :LIM .
+
+:LIM :country :Peru ;
+     :flight :SCL ;
+     :internationalFlight :SCL ;
+     rdf:type :InternationalAirport , :Airport .
