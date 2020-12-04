@@ -6,20 +6,19 @@ Implementations: https://www.w3.org/2005/rules/wiki/Implementations
 Document(
    Prefix(rdf  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
    Prefix(rdfs <http://www.w3.org/2000/01/rdf-schema#>)
-   Prefix(owl <http://www.w3.org/2002/07/owl#>)
 
    Group(
       (* <#cax-sco> *)
-      Forall ?x ?c1 ?c2 (
-         ?x[rdf:type->?c2] :- And(
-            ?c1[rdfs:subClassOf->?c2]
-            ?x[rdf:type->?c1]  ))
+      Forall ?x ?c ?d (
+         ?x[rdf:type->?d] :- And(
+            ?x[rdf:type->?c]
+            ?c[rdfs:subClassOf->?d]  ))
 
       (* <#scm-sco> *)
-      Forall ?c1 ?c2 ?c3 (
-         ?c1[rdfs:subClassOf->?c3] :- And(
-            ?c1[rdfs:subClassOf->?c2]
-            ?c2[rdfs:subClassOf->?c3]  ))
+      Forall ?c ?d ?e (
+         ?c[rdfs:subClassOf->?e] :- And(
+            ?c[rdfs:subClassOf->?d]
+            ?d[rdfs:subClassOf->?e]  ))
    )
 )
 
