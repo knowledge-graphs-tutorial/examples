@@ -41,7 +41,7 @@ If you find any material in the paper or this repository useful, please cite it 
 
 ## Overview
 
-The examples are divided into folders for each subsections according to the ACM CSUR version of the paper.
+The examples are divided into folders for each subsection according to the ACM CSUR version of the paper.
 To find a particular example you can also search by the name of a particular figure in the repository (e.g., "figure4", "table2", etc.).
 The examples include comments that point to documentation of the respecitve standard, indicate where you can try out the examples online, or otherwise where you can find code relating to the example and the discussion it the paper.
 
