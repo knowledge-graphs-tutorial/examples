@@ -12,19 +12,18 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT DISTINCT ?name {
   {
     ?festival rdf:type :Festival .
-  } UNION
-  {
+  } UNION {
     ?festival rdf:type :FoodFestival .
-  } UNION
-  {
+  } UNION {
     ?festival rdf:type :DrinksFestival .
   }
+
   {
     ?festival :location :Santiago .
-  } UNION
-  {
+  } UNION {
     ?festival :venue ?x .
     ?x :city :Santiago .
   }
+
   ?festival :name ?name .
 }
