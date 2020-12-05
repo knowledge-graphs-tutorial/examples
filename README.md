@@ -1,8 +1,7 @@
 # Knowledge graph paper examples
 
-This repository contains examples in concrete syntaxes from the Knowledge Graphs paper (under review for ACM CSUR), along with links to useful resources.
-
-See also the extended version of the paper: [Hogan, A., et al. (2020). Knowledge graphs. arXiv preprint arXiv:2003.02320.](https://arxiv.org/abs/2003.02320)
+This repository contains examples in concrete syntaxes from the Knowledge Graphs paper (under review for ACM CSUR).
+See also the extended version of the paper: [Hogan, A., et al. (2020). Knowledge Graphs. arXiv preprint arXiv:2003.02320.](https://arxiv.org/abs/2003.02320)
 
 If you find any material in the paper or this repository useful, please cite it as:
 
@@ -41,9 +40,15 @@ If you find any material in the paper or this repository useful, please cite it 
 
 ## Overview
 
+In the paper, we opted to keep examples on a high level, in order (1) to be able to focus on the respective theoretical concepts we are explaining, (2) to not confuse newcomers with possibly confusing low level details of concrete syntaxes, and (3) to have the paper still be understandable when currently popular syntaxes inevitable fall out of favor.
+Nevertheless, for newcomers that are interested to learn how these theoretical concepts are implemented in practice, in this repository we provide concrete code implementation of the examples and figures of our paper.
+
 The examples are divided into folders for each subsection according to the ACM CSUR version of the paper.
 To find a particular example you can also search by the name of a particular figure in the repository (e.g., "figure4", "table2", etc.).
-The examples include comments that point to documentation of the respecitve standard, indicate where you can try out the examples online, or otherwise where you can find code relating to the example and the discussion it the paper.
+In cases where there are multiple competing standards to implement some concepts, we try to include all.
+Thus, there are sometimes multiple implementations per figure with different file extensions.
+
+Since many different file formats and standards are used in this repository, we try to include comments that point to documentation of the respecitve standards, indicate where you can try out the examples online, or otherwise where you can find code relating to the example and the discussion it the paper.
 
 ## Resources
 
@@ -66,6 +71,9 @@ The following is a list of resources linked to in the respective examples:
 ## Contributing
 
 Please feel free to submit [bug reports](https://github.com/knowledge-graphs-tutorial/examples/issues) and [pull requests](https://github.com/knowledge-graphs-tutorial/examples/pulls)!
+
+For example, if you are a lecturer and structures your slides after the paper, you might create additional examples or step-by-step calculations to explain the paper's concepts to your students.
+Feel free to add those to this repository!
 
 ## License
 
