@@ -2,6 +2,12 @@
 # Documentation: https://www.w3.org/TR/turtle/
 # Try online: https://rdfshape.weso.es/
 # Try online: http://rdfplayground.dcc.uchile.cl/
+# Note that to express common concepts like lattitude and longitude, in practice
+# you should probably use standardized vocabularies like the Basic Geo (WGS84
+# lat/long) Vocabular: https://www.w3.org/2003/01/geo/
+# To keep the examples simples and consistent we decided against this here, see
+# https://github.com/knowledge-graphs-tutorial/examples/issues/4
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
 
 prefix : <http://example.org/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
