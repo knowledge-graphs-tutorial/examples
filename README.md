@@ -1,24 +1,23 @@
 # Knowledge graph paper examples
 
-This repository contains examples in concrete syntaxes from the Knowledge Graphs paper (under review for ACM CSUR).
-See also the extended version of the paper: [Hogan, A., et al. (2020). Knowledge Graphs. arXiv preprint arXiv:2003.02320.](https://arxiv.org/abs/2003.02320)
+This repository contains examples in concrete syntaxes from the Knowledge Graphs published with ACM CSUR.
 
 If you find any material in the paper or this repository useful, please cite it as:
 
 ```bibtex
-@article{DBLP:journals/corr/abs-2003-02320,
+@article{DBLP:journals/csur/HoganBCdMGKGNNN21,
   author    = {Aidan Hogan and
                Eva Blomqvist and
                Michael Cochez and
                Claudia d'Amato and
                Gerard de Melo and
                Claudio Guti{\'{e}}rrez and
-               Jos{\'{e}} Emilio Labra Gayo and
                Sabrina Kirrane and
-               Sebastian Neumaier and
-               Axel Polleres and
+               Jos{\'{e}} Emilio Labra Gayo and
                Roberto Navigli and
+               Sebastian Neumaier and
                Axel{-}Cyrille Ngonga Ngomo and
+               Axel Polleres and
                Sabbir M. Rashid and
                Anisa Rula and
                Lukas Schmelzeisen and
@@ -26,17 +25,20 @@ If you find any material in the paper or this repository useful, please cite it 
                Steffen Staab and
                Antoine Zimmermann},
   title     = {Knowledge Graphs},
-  journal   = {CoRR},
-  volume    = {abs/2003.02320},
-  year      = {2020},
-  url       = {https://arxiv.org/abs/2003.02320},
-  archivePrefix = {arXiv},
-  eprint    = {2003.02320},
-  timestamp = {Thu, 26 Nov 2020 15:54:05 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2003-02320.bib},
+  journal   = {{ACM} Comput. Surv.},
+  volume    = {54},
+  number    = {4},
+  pages     = {71:1--71:37},
+  year      = {2021},
+  url       = {https://doi.org/10.1145/3447772},
+  doi       = {10.1145/3447772},
+  timestamp = {Thu, 14 Oct 2021 09:18:45 +0200},
+  biburl    = {https://dblp.org/rec/journals/csur/HoganBCdMGKGNNN21.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+
+See also the extended version as a book: [Hogan, A., et al. (2021). Knowledge Graphs. Morgan and Claypool.](https://kgbook.org/)
 
 ## Overview
 
